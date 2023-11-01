@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. When two have equal ranking, they would be applied based on which comes at the last */
+        /* The specifity of this element is 1 */
+        h1 {
+            color: aqua;
+        }
+
+        /* The specifity of this element is 1 + 10 = 11 */
+        h1.yellow {
+            color: yellow;
+            /* color: blue !important; important tag is brings it to top priority, above inline */
+        }
+
+        /* The specifity of this element is 10 */
+        .cred {
+            color: red;
+        }
+        
+        /* The specifity of this element is 10 */
+        .cpurple {
+            color: purple;
+        }
+
+        
+        /* [data-x=a]{ --> Attribute selector 
+            background-color: red;
+        } */
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specifity </h1>
+    </div>
+</body>
+
+</html>
