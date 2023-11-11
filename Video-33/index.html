@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        :root{
+            --pri-bg-color: rgb(255, 255, 255);
+            --sec-bg-color: black;
+            --pri-color:black;
+            --sec-color:white;
+        }
+
+        nav{
+            background-color: var(--pri-bg-color);
+            color: var(--pri-color);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            padding: 23px;
+        }
+        @media screen and (max-width:433px){
+            body{
+                background-color: white;
+            }
+            nav{
+                background-color: var(--sec-bg-color);
+                color: var(--sec-color);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>
