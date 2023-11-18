@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&family=Kanit&display=swap');
+
+
+* {
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background-color: rgb(22, 22, 22);
+    height: 900px;
+}
+
+.navbar {
+    width: 100vw;
+    position: fixed;
+    z-index: 3;
+    background-color: rgb(53, 43, 43);
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul .navbar-items {
+    list-style-type: none;
+    position: relative;
+    margin: 19px 80px;
+    left: 12px;
+    padding: 8px 30px;
+    text-align: center;
+}
+
+.navbar-items:hover {
+    background-color: white;
+    width: 20px;
+    border-radius: 20px;
+    color: black;
+}
+
+.boxes {
+    background-color: green;
+}
+
+.box1 {
+    position: relative;
+    top: 151px;
+    background-color: red;
+    height: 157px;
+    width: 157px;
+    left: 88px;
+}
+
+.box2 {
+    position: relative;
+    top: -2px;
+    background-color: red;
+    height: 157px;
+    width: 157px;
+    left: 294px;
+}
+
+.textbox{
+    margin: 10px;
+   padding: 30px;
+   border: 1px solid white;
+   border-radius: 57px;
+   height: 170px;
+}
+
+.textbox-text{
+    position: relative;
+    font-size: 3rem;
+    top: 12vh;
+    left: 58px;
+}
