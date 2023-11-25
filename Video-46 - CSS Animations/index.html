@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container{
+            background-color: rgb(148, 186, 186);
+            height: 80vh;
+            width: 30vw;
+            /* animation-name: animation;
+            animation-duration: 2s; Try this out*/
+        }
+
+        .box{
+            height: 34px;
+            width: 45px;
+            /* background-color: aqua; */
+            animation-name: animation;
+            /* animation-duration: 2s;
+            animation-iteration-count: 3;
+            animation-timing-function: cubic-bezier(0, 2.24, 0, 1);
+            animation-delay: 1s;
+            animation-direction: alternate-reverse; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: animation 3s ease-in 1s backwards;
+        }
+
+        @keyframes animation {
+            from{
+                background-color: aqua;
+            }
+            to{
+                background-color: rgb(7, 56, 56);
+                transform: translateX(500px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
