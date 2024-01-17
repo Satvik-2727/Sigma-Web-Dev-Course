@@ -1,0 +1,83 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+
+/* CSS */
+*{
+    margin: 10px;
+    padding: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.thumbnail{
+    display: inline;
+    border-radius: 12px;
+}
+
+body{
+    background-color: rgb(24, 24, 24);
+}
+
+.card{
+    position: relative;
+    margin: auto;
+    width: 81vw;
+    margin-top: 3vw;
+    padding: 1vw;
+    border-radius: 10px;
+    height: fit-content;
+    display: flex;
+    background-color: black;
+}
+
+.heading{
+    position: relative;
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 900;
+}
+
+.text-box{
+    margin-left: 0;
+    margin-top: 2vw;
+}
+
+.duration{
+    position: absolute;
+    padding: 0.3vw;
+    top: 10vw;
+    left: 16vw;
+    background-color: black;
+    opacity: 0.8;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+}
+
+.duration-text{
+    letter-spacing: 0.2vw;
+    margin: 0;
+    font-size: 1.3vw;
+    font-weight: 900;
+}
+
+.details-box{
+    margin: 0;
+}
+
+.details-list{
+    display: flex;
+    margin: 0;
+}
+
+#channel{
+    list-style-type: none;
+}
+
+.details{
+    margin-left: 1.5vw;
+    color: #9e9b92;
+    font-weight: 900;
+}
